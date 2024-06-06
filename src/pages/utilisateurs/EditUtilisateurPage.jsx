@@ -1,20 +1,23 @@
-import { useCallback, useEffect, useRef, useState } from "react"
-import { useDispatch } from "react-redux"
-import { setBreadCrumbItemsAction, setToastAction } from "../../store/actions/appActions"
-import { administration_routes_items } from "../../routes/admin/administration_routes"
-import { Button } from 'primereact/button';
-import { Calendar } from 'primereact/calendar';
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
+import {
+  setBreadCrumbItemsAction,
+  setToastAction,
+} from "../../store/actions/appActions";
+import { administration_routes_items } from "../../routes/admin/administration_routes";
+import { Button } from "primereact/button";
+import { Calendar } from "primereact/calendar";
 import { useForm } from "../../hooks/useForm";
 import { useFormErrorsHandle } from "../../hooks/useFormErrorsHandle";
 import moment from "moment";
 import fetchApi from "../../helpers/fetchApi";
-import { Dropdown } from 'primereact/dropdown';
-import { InputText } from 'primereact/inputtext';
-import { FileUpload } from 'primereact/fileupload';
+import { Dropdown } from "primereact/dropdown";
+import { InputText } from "primereact/inputtext";
+import { FileUpload } from "primereact/fileupload";
 import wait from "../../helpers/wait";
 import Loading from "../../components/app/Loading";
 import { useNavigate, useParams } from "react-router-dom";
-import { Image } from 'primereact/image';
+import { Image } from "primereact/image";
 
 const initialForm = {
     nom: '',
@@ -456,3 +459,4 @@ export default function EditUtilisateurPage() {
         </>
     )
 }
+  
