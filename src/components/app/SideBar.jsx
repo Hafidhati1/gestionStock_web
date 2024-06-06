@@ -79,6 +79,19 @@ export default function SideBar() {
                     </div>
 
 
+                    <div className='nav-item'>
+                        <Link to={"client"} className="text-decoration-none rounded d-block" href="/client">
+                            <div className="d-flex align-items-center justify-content-between py-2 px-3">
+                                <div className='d-flex align-items-center justify-content-between'>
+                                    <div className="menu-icon">
+                                    </div>
+                                    <span className='menu-title'>Client</span>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+
+
 
                     <div className='nav-item'>
                         <a className="text-decoration-none rounded d-block" data-bs-toggle="collapse" href="#administration" role="button" aria-expanded="false" aria-controls="administration">
